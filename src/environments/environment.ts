@@ -3,7 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  headers: {
+    'Ocp-Apim-Subscription-Key': '244998e7214a4457873b498475d80570',
+    'Ocp-Apim-Trace': 'true',
+    userID: 'mahesh.beeravelli@mphasis.com',
+  },
+  clientID: 'e9a45c1b-57f2-494f-9bfe-491f05d203c5', //vmtsweb ad app
 };
 
 /*

@@ -1,0 +1,60 @@
+.navbar {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  background: #43cea2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #185a9d,
+    #43cea2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #185a9d,
+    #43cea2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  mat-toolbar-row {
+    background: url("../../assets/logo-title.png");
+    // background-size: contain;
+    background-size: 170px; 
+    background-repeat: no-repeat;
+    margin-top: 5px;
+  }
+  h1.nav-title {
+    padding-right: 2rem;
+    // background-image: url("assets/logo.png");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // padding-left: 36px;
+  }
+  .menu-item {
+    border-bottom: 2px solid transparent;
+    margin-right: 1.2rem;
+    &.active {
+      // text-decoration: underline;
+      border-bottom: 2px solid white;
+    }
+  }
+  .nav-title {
+    flex: 1;
+    // background: url(https://appaccess.mphasis.com/images/Mphasis_Login.png);
+    // background: url("../../assets/logo-title.png");
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    /* color: transparent; */
+    // padding-left: 102px;
+    // padding-left: 180px; for logo background cover
+    padding-left: 170px; // Backgroud 14%
+  }
+  .nav-menu {
+    flex: 6;
+  }
+  .nav-icon {
+    padding: 0 14px;
+  }
+
+  .nav-spacer {
+    flex: 1 1 auto;
+  }
+}

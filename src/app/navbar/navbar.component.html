@@ -1,0 +1,29 @@
+<mat-toolbar color="accent" class="navbar" *ngIf="user$ | async as user">
+  <mat-toolbar-row>
+    <h1 class="nav-title">
+      <!-- <div
+        class="header-image"
+        style="background-image: url('assets/logo.png');"
+      ></div> -->
+      Proctoring
+    </h1>
+    <div class="nav-menu">
+      <a
+        mat-button
+        [routerLink]="['/']"
+        routerLinkActive="active"
+        class="menu-item"
+      >
+        <mat-icon aria-hidden="false">home</mat-icon>
+        Dashboard
+      </a>
+    </div>
+    <span class="nav-spacer"></span>
+    <span>
+      Hi {{ user.name }}
+    </span>
+    <button mat-icon-button aria-label="Logout" (click)="logoutUser()">
+      <mat-icon aria-hidden="false" aria-label="Logout">exit_to_app</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>

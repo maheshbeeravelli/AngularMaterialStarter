@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@import "_theme";
+@import "mixins";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  margin: 0;
+  font-size: 10px;
+  background-color: rgb(245, 241, 234);
+  // margin-top: 8rem;
+}
